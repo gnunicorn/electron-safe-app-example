@@ -12,6 +12,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app';
 
-ReactDOM.render(<App />, document.getElementById('App'));
+const appInfo = {
+  id: 'net.maidsafe.examples.electron-example.helloWorld',
+  name: 'Electron Hello World',
+  vendor: 'MaidSafe Ltd'
+};
+
+ReactDOM.render(<App info={appInfo} />, document.getElementById('App'));
+
 </script>
 </html>
